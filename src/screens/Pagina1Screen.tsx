@@ -40,7 +40,7 @@ export const Pagina1Screen = ({ navigation }: Props ) => {
             <Text style={styles.title }>Pagina1Screen </Text>
 
             <Button 
-                title="Ir página 2"
+                title="Ir página - 2"
                 onPress={ () => navigation.navigate('Pagina2Screen') }
             />
 
@@ -67,7 +67,7 @@ export const Pagina1Screen = ({ navigation }: Props ) => {
                         color="white"
                         size={ 35 }
                     />
-                    <Text style={ styles.botonGrandeTexto }>Pedro</Text>
+                    <Text style={ styles.botonGrandeTexto }>Pedro - </Text>
                 </TouchableOpacity>
 
 

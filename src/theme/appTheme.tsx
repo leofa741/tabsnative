@@ -30,11 +30,12 @@ export const styles = StyleSheet.create({
     },
     avatarContainer: {
         alignItems: 'center',
-        marginTop: 20
+        marginTop: 10,
+        marginRight: 130,
     },
     avatar: {
-        width: 150,
-        height: 150,
+        width: 100,
+        height: 100,
         borderRadius: 100
     },
     menuContainer: {

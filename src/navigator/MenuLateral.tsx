@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 const Drawer = createDrawerNavigator();
 
-
+ 
 
 export const MenuLateral = () => {
   
@@ -44,6 +44,11 @@ const MenuInterno = ( { navigation }: DrawerContentComponentProps<DrawerContentO
       </View>
 
 
+
+
+
+
+
       {/* Opciones de menú */}
       <View style={ styles.menuContainer }>
 
@@ -56,7 +61,7 @@ const MenuInterno = ( { navigation }: DrawerContentComponentProps<DrawerContentO
           >
             <Icon name="compass-outline" size={ 23 } color="black" />
             <Text style={ styles.menuTexto }> Navegacion</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> 
 
           <TouchableOpacity 
             style={{ 
@@ -70,6 +75,9 @@ const MenuInterno = ( { navigation }: DrawerContentComponentProps<DrawerContentO
           </TouchableOpacity>
 
       </View>
+
+
+      
 
     </DrawerContentScrollView>
   );

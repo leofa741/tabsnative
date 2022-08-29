@@ -22,7 +22,7 @@ export const Pagina2Screen = () => {
 
             <Button 
                 title="Ir página 3"
-                onPress={ () => navigator.navigate('Pagina3Screen')  }
+                onPress={ () => navigator.navigate('Pagina3Screen')   }
             />
 
         </View>

@@ -10,17 +10,21 @@ export const Tab1Screen = () => {
 
     const { top } = useSafeAreaInsets();
 
+
     useEffect(() => {
         console.log('Tab1Screen effect');
     }, [])
 
+
+
     return (
+
         <View style={{ 
             ...styles.globalMargin,
-            marginTop: top + 10
+            marginTop: top +5
         }}
         >
-            <Text style={ styles.title }> Iconos </Text>
+            <Text style={ styles.title }> Iconos </Text> 
 
             <Text>
                 <Icon name="airplane-outline" size={ 80 } color={ colores.primary } />
