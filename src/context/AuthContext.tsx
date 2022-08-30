@@ -20,6 +20,7 @@ export interface AuthContextProps{
     sigIn:()=>void;
     changeFavicon: (iconName: string) => void;
     logOut: () => void;
+    changeUsernameSelect: (username: string) => void;
 }
 
 export const AuthContext= createContext({} as AuthContextProps) 
@@ -35,6 +36,9 @@ const changeFavicon =(iconName:string)=>{
 dispach({type:'changeIcon',payload: iconName})
 
 }
+const changeUsernameSelect=(username:string)=>{
+    dispach({type:'changeUsername',payload:username})
+}
 
 const logOut =()=>{
 
@@ -47,7 +51,8 @@ return(
        authState,
        sigIn,
        changeFavicon,
-       logOut
+       logOut,
+       changeUsernameSelect
     }}
     >
     {children}    
